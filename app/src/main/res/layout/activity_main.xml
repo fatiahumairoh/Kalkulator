@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TextView_awal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Silahkan Masukkan Angka"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/Linear_Layout_operator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/Edit_Text_angka_kedua"
+        />
+
+        <EditText
+            android:id="@+id/Edit_Text_angka_pertama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Angka"
+            android:inputType="number"
+            android:layout_below="@+id/TextView_awal"/>
+
+          <EditText
+              android:id="@+id/Edit_Text_angka_kedua"
+              android:layout_width=""
+              android:layout_height="wrap_content"
+              android:hint="Masukkan Angka"
+              android:inputType="number"
+              android:layout_below="@+id/Edit_Text_angka_pertama"/>
+
+
+
+         <Button
+            android:id="@+id/buttonPanel_tambah"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/buttonPanel_kurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/buttonPanel_kali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"/>
+
+        <Button
+            android:id="@+id/buttonPanel_bagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/" />
+
+
+</RelativeLayout>
